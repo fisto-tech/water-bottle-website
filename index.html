@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aquavista | Natural Spring Water</title>
+    <meta
+        name="description"
+        content="Aquavista is a premium bottled water brand website presenting its bottle, product quality, company values, and contact information."
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="icon" type="image/png" href="assets/images/transparent-aquavista.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@500;700;800&display=swap"
+        rel="stylesheet"
+    />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <div class="page-shell">
+        <div class="topbar">
+            <div class="container topbar__inner">
+                <span>Premium packaged drinking water</span>
+                <span>Retail, hospitality, and bulk supply enquiries</span>
+            </div>
+        </div>
+
+        <header class="site-header" id="top">
+            <div class="container site-header__inner">
+                <a class="brand" href="#top" aria-label="Aquavista home">
+                    <img class="brand__mark" src="assets/images/transparent-aquavista.png" alt="Aquavista logo" />
+                    <span class="brand__text">
+                        <strong>Aquavista</strong>
+                        <small>Packaged Drinking Water</small>
+                    </span>
+                </a>
+
+                <nav class="site-nav" aria-label="Main navigation">
+                    <a href="#story">Company</a>
+                    <a href="#product">Product</a>
+                    <a href="#gallery">Gallery</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+
+                <a class="button button--ghost" href="#contact">Get in touch</a>
+            </div>
+        </header>
+
+        <main>
+            <section class="hero section">
+                <div class="container hero__grid">
+                    <div class="hero__content" data-reveal>
+                        <span class="eyebrow">Packaged drinking water</span>
+                        <h1>Refreshing packaged water for homes, travel, offices, retail, and hospitality.</h1>
+                        <p class="hero__lead">
+                            Aquavista brings together clean drinking water, dependable bottling standards, and a strong retail-ready brand presence for modern Indian consumers and businesses.
+                        </p>
+
+                        <div class="hero__feature-list">
+                            <div class="hero__feature-item">
+                                <strong>Reliable product quality</strong>
+                                <span>Clear, refreshing packaged water prepared for everyday use and repeat customer trust.</span>
+                            </div>
+                            <div class="hero__feature-item">
+                                <strong>Business-ready supply</strong>
+                                <span>Suitable for retail counters, offices, events, hospitality spaces, and distribution partners.</span>
+                            </div>
+                        </div>
+
+                        <div class="hero__actions">
+                            <a class="button" href="#product">Explore product</a>
+                            <a class="button button--secondary" href="#contact">Business enquiry</a>
+                        </div>
+
+                        <div class="hero__facts">
+                            <span>Clean taste</span>
+                            <span>Retail supply</span>
+                            <span>Bulk orders</span>
+                            <span>Hospitality use</span>
+                        </div>
+                    </div>
+
+                    <div class="hero__visual" data-reveal>
+                        <div class="hero__visual-card">
+                            <div class="hero__visual-halo"></div>
+                            <img class="hero__brand-watermark" src="assets/images/transparent-aquavista.png" alt="" aria-hidden="true" />
+                            <img
+                                class="hero__bottle"
+                                src="assets/images/transparent-aquavista.png"
+                                alt="Aquavista water bottle"
+                            />
+                            <div class="floating-note floating-note--top">
+                                <span>Brand</span>
+                                <strong>Aquavista is designed to look dependable on shelf, in stores, and across distribution channels.</strong>
+                            </div>
+                            <div class="floating-note floating-note--bottom">
+                                <span>Product</span>
+                                <strong>Clean packaged water made for everyday hydration, service counters, and institutional supply.</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="trust-strip section">
+                <div class="container trust-strip__grid">
+                    <article class="trust-card" data-reveal>
+                        <strong>Retail supply</strong>
+                        <span>Well-suited for supermarkets, local stores, and modern trade counters.</span>
+                    </article>
+                    <article class="trust-card" data-reveal>
+                        <strong>Corporate orders</strong>
+                        <span>Prepared for office use, meetings, reception areas, and staff requirements.</span>
+                    </article>
+                    <article class="trust-card" data-reveal>
+                        <strong>Hospitality support</strong>
+                        <span>Fits hotels, events, guest rooms, catering, and premium service environments.</span>
+                    </article>
+                    <article class="trust-card" data-reveal>
+                        <strong>Brand presentation</strong>
+                        <span>A clean bottle and label system designed for visible trust and recall.</span>
+                    </article>
+                </div>
+            </section>
+
+            <section class="sequence" id="story">
+                <div class="sequence-stage" id="sequenceStage">
+                    <div class="sequence-stage__sticky">
+                        <div class="sequence-frame">
+                            <canvas id="sequenceCanvas" aria-label="Animated bottle sequence"></canvas>
+                            <div class="sequence-frame__glow"></div>
+                        </div>
+
+                        <div class="sequence-overlay">
+                            <div class="sequence-overlay__top" data-reveal>
+                                <span class="eyebrow">Why Aquavista</span>
+                                <h2>Built to look professional, feel refreshing, and serve multiple business needs.</h2>
+                            </div>
+
+                            <div class="sequence-stage__copy">
+                                <div class="sequence-copy sequence-copy--active" data-step="0">
+                                    <span>01</span>
+                                    <h3>Refreshing everyday drinking water</h3>
+                                </div>
+                                <div class="sequence-copy" data-step="1">
+                                    <span>02</span>
+                                    <h3>Clear and premium bottle presence</h3>
+                                </div>
+                                <div class="sequence-copy" data-step="2">
+                                    <span>03</span>
+                                    <h3>Made for retail and service spaces</h3>
+                                </div>
+                                <div class="sequence-copy" data-step="3">
+                                    <span>04</span>
+                                    <h3>Strong brand recall for repeat buyers</h3>
+                                </div>
+                            </div>
+
+                            <div class="sequence-meta">
+                                <div>
+                                    <strong>Packaged water brand</strong>
+                                </div>
+                                <div>
+                                    <strong>Retail and distribution focus</strong>
+                                </div>
+                                <div>
+                                    <strong>Clean and professional identity</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="features section" id="product">
+                <div class="container">
+                    <div class="section-heading" data-reveal>
+                        <span class="eyebrow">Product details</span>
+                        <h2>The Aquavista bottle is positioned as a dependable packaged water product for daily use and business supply.</h2>
+                    </div>
+
+                    <div class="feature-grid">
+                        <article class="feature-card" data-reveal>
+                            <span class="feature-card__number">01</span>
+                            <h3>Fresh taste</h3>
+                            <p>Prepared to deliver a clear, refreshing, and easy-to-choose drinking experience.</p>
+                        </article>
+
+                        <article class="feature-card" data-reveal>
+                            <span class="feature-card__number">02</span>
+                            <h3>Clear packaging</h3>
+                            <p>A transparent bottle and visible branding help the product stand out on shelf.</p>
+                        </article>
+
+                        <article class="feature-card feature-card--image" data-reveal>
+                            <img src="assets/images/frames/ezgif-frame-124.jpg" alt="Bottle feature detail" />
+                        </article>
+
+                        <article class="feature-card feature-card--wide" data-reveal>
+                            <span class="feature-card__number">03</span>
+                            <h3>Retail-ready identity</h3>
+                            <p>The label, bottle shape, and overall visual style are developed to work well across retail stores, distribution channels, hotels, events, and institutional supply environments.</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="gallery section" id="gallery">
+                <div class="container">
+                    <div class="section-heading" data-reveal>
+                        <span class="eyebrow">Gallery</span>
+                        <h2>A closer look at the Aquavista bottle, label, and shelf-ready appearance.</h2>
+                    </div>
+
+                    <div class="gallery-grid">
+                        <figure class="gallery-card gallery-card--large" data-reveal>
+                            <img src="assets/images/frames/ezgif-frame-072.jpg" alt="Aquavista bottle frame" />
+                        </figure>
+                        <figure class="gallery-card" data-reveal>
+                            <img src="assets/images/frames/ezgif-frame-096.jpg" alt="Aquavista close up frame" />
+                        </figure>
+                        <figure class="gallery-card" data-reveal>
+                            <img src="assets/images/frames/ezgif-frame-168.jpg" alt="Aquavista bottle visual" />
+                        </figure>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact section" id="contact">
+                <div class="container contact__grid">
+                    <div class="contact__intro" data-reveal>
+                        <span class="eyebrow">Contact</span>
+                        <h2>Connect for supply and business enquiries.</h2>
+                        <p>Contact Aquavista for dealership interest, retail supply, hospitality orders, office requirements, events, and distribution opportunities.</p>
+                    </div>
+
+                    <form class="contact-form" id="contactForm" data-reveal>
+                        <div class="field">
+                            <label for="name">Name</label>
+                            <input id="name" name="name" type="text" placeholder="Your name" />
+                        </div>
+                        <div class="field">
+                            <label for="email">Email</label>
+                            <input id="email" name="email" type="email" placeholder="name@email.com" />
+                        </div>
+                        <div class="field field--full">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Tell us about your inquiry"></textarea>
+                        </div>
+                        <div class="contact-form__actions field--full">
+                            <button type="submit" class="button">Send request</button>
+                            <a class="button button--secondary" href="#top">Back to top</a>
+                        </div>
+                        <p class="contact-form__note" id="contactNote">A clean contact section for product enquiries.</p>
+                    </form>
+                </div>
+            </section>
+
+            <footer class="site-footer">
+                <div class="container site-footer__inner">
+                    <div class="site-footer__brand">
+                        <img class="site-footer__logo" src="assets/images/transparent-aquavista.png" alt="Aquavista logo" />
+                        <div>
+                            <strong>Aquavista</strong>
+                            <p>A packaged drinking water brand created for dependable daily use and a strong presence across retail, business, and hospitality environments.</p>
+                        </div>
+                    </div>
+
+                    <div class="site-footer__links">
+                        <a href="#story">Company</a>
+                        <a href="#product">Product</a>
+                        <a href="#gallery">Gallery</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                </div>
+            </footer>
+        </main>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
