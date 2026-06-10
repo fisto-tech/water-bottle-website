@@ -1,6 +1,7 @@
 (() => {
     'use strict';
 
+    const preloader = document.getElementById('preloader');
     const canvas = document.getElementById('sequenceCanvas');
     const sequenceStage = document.getElementById('sequenceStage');
     const revealItems = document.querySelectorAll('[data-reveal]');
@@ -9,7 +10,16 @@
     const contactForm = document.getElementById('contactForm');
     const contactNote = document.getElementById('contactNote');
 
+    function hidePreloader() {
+        if (!preloader || preloader.classList.contains('preloader--hidden')) return;
+        preloader.classList.add('preloader--hidden');
+        setTimeout(() => { preloader.style.display = 'none'; }, 900);
+    }
+
+    window.addEventListener('load', hidePreloader);
+
     if (typeof gsap === 'undefined' || typeof ScrollTrigger === 'undefined' || typeof Lenis === 'undefined') {
+        hidePreloader();
         return;
     }
 
@@ -71,7 +81,7 @@
             y: 40,
             duration: 1.2,
             stagger: 0.2,
-            ease: 'power3.out',
+            ease: 'power4.out',
             delay: 0.3,
             scrollTrigger: {
                 trigger: '.hero',
@@ -122,7 +132,7 @@
             scale: 0.85,
             y: 60,
             duration: 1.4,
-            ease: 'power3.out',
+            ease: 'power4.out',
             delay: 0.4,
             scrollTrigger: {
                 trigger: '.hero__visual',
@@ -378,6 +388,7 @@
     }
 
     loadImages().then(() => {
+        hidePreloader();
         resizeCanvas();
 
         const isDesktop = window.matchMedia('(min-width: 1081px)').matches;
