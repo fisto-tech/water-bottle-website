@@ -3,21 +3,20 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aquavista | Natural Spring Water</title>
-    <meta
-        name="description"
-        content="Aquavista is a premium bottled water brand website presenting its bottle, product quality, company values, and contact information."
-    />
-    <meta name="theme-color" content="#ffffff" />
+    <title>Aquavista — The Art of Pure Hydration</title>
+    <meta name="description" content="Aquavista is a premium bottled water brand — crafted by nature, perfected in every bottle." />
+    <meta name="theme-color" content="#0a1628" />
     <link rel="icon" type="image/png" href="assets/images/transparent-aquavista.png" />
 
+    <!-- Premium Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@500;700;800&display=swap"
-        rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet" />
 
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+
+    <!-- Libraries -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
@@ -26,17 +25,20 @@
 </head>
 <body>
     <div class="page-shell">
+
+        <!-- ═══ TOPBAR ═══ -->
         <div class="topbar">
             <div class="container topbar__inner">
-                <span>Premium packaged drinking water</span>
-                <span>Retail, hospitality, and bulk supply enquiries</span>
+                <span><i class="ph ph-droplet"></i> Premium packaged drinking water</span>
+                <span>Retail <span class="topbar__sep">·</span> Hospitality <span class="topbar__sep">·</span> Bulk supply</span>
             </div>
         </div>
 
+        <!-- ═══ HEADER ═══ -->
         <header class="site-header" id="top">
             <div class="container site-header__inner">
                 <a class="brand" href="#top" aria-label="Aquavista home">
-                    <img class="brand__mark" src="assets/images/transparent-aquavista.png" alt="Aquavista logo" />
+                    <img class="brand__mark" src="assets/images/transparent-aquavista.png" alt="" />
                     <span class="brand__text">
                         <strong>Aquavista</strong>
                         <small>Packaged Drinking Water</small>
@@ -44,246 +46,420 @@
                 </a>
 
                 <nav class="site-nav" aria-label="Main navigation">
-                    <a href="#story">Company</a>
+                    <a href="#story">Heritage</a>
+                    <a href="#craft">Craft</a>
                     <a href="#product">Product</a>
+                    <a href="#specs">Specs</a>
                     <a href="#gallery">Gallery</a>
                     <a href="#contact">Contact</a>
-                </nav>
-
-                <a class="button button--ghost" href="#contact">Get in touch</a>
+                </nav>                    <a class="button button--ghost" href="#contact"><i class="ph ph-headphones"></i> Get in touch</a>
             </div>
         </header>
 
         <main>
-            <section class="hero section">
+
+            <!-- ════════════════════════════════════
+                 HERO
+                 ════════════════════════════════════ -->
+            <section class="hero" id="hero">
+                <div class="hero__bg">
+                    <div class="hero__bg-orbs">
+                        <span></span><span></span><span></span>
+                    </div>
+                    <div class="hero__bg-rays"></div>
+                </div>
                 <div class="container hero__grid">
                     <div class="hero__content" data-reveal>
-                        <span class="eyebrow">Packaged drinking water</span>
-                        <h1>Trusted packaged water for retail, offices, travel, and hospitality.</h1>
-                        <p class="hero__lead">
-                            Aquavista combines clean drinking water, reliable bottling, and a strong shelf-ready brand identity for everyday consumers and business supply.
-                        </p>
-
-                        <div class="hero__feature-list">
-                            <div class="hero__feature-item">
-                                <strong>Reliable product quality</strong>
-                                <span>Clean water for daily use and repeat customer confidence.</span>
-                            </div>
-                            <div class="hero__feature-item">
-                                <strong>Business-ready supply</strong>
-                                <span>Suitable for retail counters, offices, events, and hospitality spaces.</span>
-                            </div>
-                        </div>
-
+                        <span class="hero__badge">
+                            <i class="ph ph-sparkle"></i> Premium bottled water
+                        </span>
+                        <h1>
+                            <span class="hero__line hero__line--1">The Art of</span>
+                            <span class="hero__line hero__line--2">Pure</span>
+                            <span class="hero__line hero__line--3">Hydration</span>
+                        </h1>
+                        <p class="hero__lead">From pristine sources. To your table. Every bottle tells a story of purity, crafted for those who demand the finest.</p>
                         <div class="hero__actions">
-                            <a class="button" href="#product">Explore product</a>
-                            <a class="button button--secondary" href="#contact">Business enquiry</a>
+                            <a class="button" href="#product">
+                                <i class="ph ph-eye"></i> Explore product
+                            </a>
+                            <a class="button button--ghost" href="#contact">
+                                <i class="ph ph-chat-text"></i> Business enquiry
+                            </a>
                         </div>
-
                         <div class="hero__facts">
-                            <span>Clean taste</span>
-                            <span>Retail supply</span>
-                            <span>Bulk orders</span>
+                            <span><i class="ph ph-droplet"></i> Pure taste</span>
+                            <span><i class="ph ph-storefront"></i> Retail supply</span>
+                            <span><i class="ph ph-package"></i> Bulk orders</span>
+                            <span><i class="ph ph-certificate"></i> Premium quality</span>
                         </div>
                     </div>
-
                     <div class="hero__visual" data-reveal>
                         <div class="hero__visual-card">
                             <div class="hero__visual-halo"></div>
-                            <img class="hero__brand-watermark" src="assets/images/transparent-aquavista.png" alt="" aria-hidden="true" />
-                            <img
-                                class="hero__bottle"
-                                src="assets/images/transparent-aquavista.png"
-                                alt="Aquavista water bottle"
-                            />
-                            <div class="floating-note floating-note--top">
-                                <span>Brand</span>
-                                <strong>Aquavista is designed to look dependable on shelf, in stores, and across distribution channels.</strong>
+                            <div class="hero__visual-reflections"></div>
+                            <img class="hero__bottle" src="assets/images/frames_cropped/ezgif-frame-180.jpg" alt="Aquavista premium water bottle" />
+                            <div class="hero__note hero__note--1">
+                                <i class="ph ph-droplet"></i>
+                                <div>
+                                    <span>Source</span>
+                                    <strong>Natural springs</strong>
+                                </div>
                             </div>
-                            <div class="floating-note floating-note--bottom">
-                                <span>Product</span>
-                                <strong>Clean packaged water made for everyday hydration, service counters, and institutional supply.</strong>
+                            <div class="hero__note hero__note--2">
+                                <i class="ph ph-star"></i>
+                                <div>
+                                    <span>Quality</span>
+                                    <strong>Premium grade</strong>
+                                </div>
+                            </div>
+                            <div class="hero__note hero__note--3">
+                                <i class="ph ph-shield-check"></i>
+                                <div>
+                                    <span>Certified</span>
+                                    <strong>ISO standard</strong>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section class="trust-strip section">
-                <div class="container trust-strip__grid">
-                    <article class="trust-card" data-reveal>
-                        <strong>Retail supply</strong>
-                        <span>Well-suited for supermarkets, local stores, and modern trade counters.</span>
+            <!-- ════════════════════════════════════
+                 TRUST STRIP
+                 ════════════════════════════════════ -->
+            <section class="trust section">
+                <div class="container trust__grid">
+                    <article class="trust__card" data-reveal>
+                        <div class="trust__icon"><i class="ph ph-storefront"></i></div>
+                        <h3>Retail supply</h3>
+                        <p>Premium placement in select stores nationwide</p>
                     </article>
-                    <article class="trust-card" data-reveal>
-                        <strong>Corporate orders</strong>
-                        <span>Prepared for office use, meetings, reception areas, and staff requirements.</span>
+                    <article class="trust__card" data-reveal>
+                        <div class="trust__icon"><i class="ph ph-building"></i></div>
+                        <h3>Corporate</h3>
+                        <p>Tailored solutions for offices and enterprises</p>
                     </article>
-                    <article class="trust-card" data-reveal>
-                        <strong>Hospitality support</strong>
-                        <span>Fits hotels, events, guest rooms, catering, and premium service environments.</span>
+                    <article class="trust__card" data-reveal>
+                        <div class="trust__icon"><i class="ph ph-buildings"></i></div>
+                        <h3>Hospitality</h3>
+                        <p>Partnering with premium hotels and venues</p>
                     </article>
-                    <article class="trust-card" data-reveal>
-                        <strong>Brand presentation</strong>
-                        <span>A clean bottle and label system designed for visible trust and recall.</span>
+                    <article class="trust__card" data-reveal>
+                        <div class="trust__icon"><i class="ph ph-shield"></i></div>
+                        <h3>Brand trust</h3>
+                        <p>A name synonymous with purity and quality</p>
                     </article>
                 </div>
             </section>
 
+            <!-- ════════════════════════════════════
+                 SEQUENCE / STORY
+                 ════════════════════════════════════ -->
             <section class="sequence" id="story">
-                <div class="sequence-stage" id="sequenceStage">
-                    <div class="sequence-stage__sticky">
-                        <div class="sequence-frame">
-                            <canvas id="sequenceCanvas" aria-label="Animated bottle sequence"></canvas>
-                            <div class="sequence-frame__glow"></div>
+                <div class="sequence__stage" id="sequenceStage">
+                    <div class="sequence__sticky">
+                        <div class="sequence__frame">
+                            <canvas id="sequenceCanvas"></canvas>
+                            <div class="sequence__glow"></div>
                         </div>
-
-                        <div class="sequence-overlay">
-                            <div class="sequence-overlay__top" data-reveal>
-                                <span class="eyebrow">Why Aquavista</span>
-                                <h2>Built to look professional, feel refreshing, and serve multiple business needs.</h2>
-                            </div>
-
-                            <div class="sequence-stage__copy">
-                                <div class="sequence-copy sequence-copy--active" data-step="0">
-                                    <span>01</span>
-                                    <h3>Refreshing everyday drinking water</h3>
-                                </div>
-                                <div class="sequence-copy" data-step="1">
-                                    <span>02</span>
-                                    <h3>Clear and premium bottle presence</h3>
-                                </div>
-                                <div class="sequence-copy" data-step="2">
-                                    <span>03</span>
-                                    <h3>Made for retail and service spaces</h3>
-                                </div>
-                                <div class="sequence-copy" data-step="3">
-                                    <span>04</span>
-                                    <h3>Strong brand recall for repeat buyers</h3>
+                        <div class="sequence__overlay">
+                            <!-- Positioned labels -->
+                            <div class="seq-label seq-label--tl seq-label--active" data-step="0">
+                                <div class="seq-label__card">
+                                    <i class="ph ph-droplet"></i>
+                                    <div>
+                                        <span class="seq-label__num">01</span>
+                                        <strong>Fresh</strong>
+                                        <span class="seq-label__hint">Pure spring essence</span>
+                                    </div>
                                 </div>
                             </div>
-
-                            <div class="sequence-meta">
-                                <div>
-                                    <strong>Packaged water brand</strong>
+                            <div class="seq-label seq-label--r" data-step="1">
+                                <div class="seq-label__card">
+                                    <i class="ph ph-gem"></i>
+                                    <div>
+                                        <span class="seq-label__num">02</span>
+                                        <strong>Clear</strong>
+                                        <span class="seq-label__hint">Crystal brilliance</span>
+                                    </div>
                                 </div>
-                                <div>
-                                    <strong>Retail and distribution focus</strong>
+                            </div>
+                            <div class="seq-label seq-label--bl" data-step="2">
+                                <div class="seq-label__card">
+                                    <i class="ph ph-storefront"></i>
+                                    <div>
+                                        <span class="seq-label__num">03</span>
+                                        <strong>Retail</strong>
+                                        <span class="seq-label__hint">Shelf perfection</span>
+                                    </div>
                                 </div>
-                                <div>
-                                    <strong>Clean and professional identity</strong>
+                            </div>
+                            <div class="seq-label seq-label--br" data-step="3">
+                                <div class="seq-label__card">
+                                    <i class="ph ph-seal"></i>
+                                    <div>
+                                        <span class="seq-label__num">04</span>
+                                        <strong>Trust</strong>
+                                        <span class="seq-label__hint">Brand heritage</span>
+                                    </div>
                                 </div>
+                            </div>
+                            <!-- Nav dots -->
+                            <div class="seq-dots">
+                                <button class="seq-dot seq-dot--active" data-step="0" aria-label="Step 1"><span></span></button>
+                                <button class="seq-dot" data-step="1" aria-label="Step 2"><span></span></button>
+                                <button class="seq-dot" data-step="2" aria-label="Step 3"><span></span></button>
+                                <button class="seq-dot" data-step="3" aria-label="Step 4"><span></span></button>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
 
+            <!-- ════════════════════════════════════
+                 NEW: THE CRAFT / PROCESS
+                 ════════════════════════════════════ -->
+            <section class="craft section" id="craft">
+                <div class="container">
+                    <div class="section-heading" data-reveal>
+                        <span class="eyebrow"><i class="ph ph-gear"></i> The Craft</span>
+                        <h2>From <span class="gold">Source</span> to Shelf</h2>
+                        <p>Every bottle of Aquavista undergoes a meticulous journey — from pristine natural springs to your hands, preserving purity at every step.</p>
+                    </div>
+                    <div class="craft__grid">
+                        <article class="craft__card" data-reveal>
+                            <div class="craft__image">
+                                <img src="assets/images/frames_cropped/ezgif-frame-030.jpg" alt="Natural spring source" />
+                                <div class="craft__step">01</div>
+                            </div>
+                            <div class="craft__content">
+                                <i class="ph ph-tree"></i>
+                                <h3>Natural sourcing</h3>
+                                <p>Sourced from protected natural springs deep within pristine landscapes</p>
+                            </div>
+                        </article>
+                        <article class="craft__card" data-reveal>
+                            <div class="craft__image">
+                                <img src="assets/images/frames_cropped/ezgif-frame-100.jpg" alt="Filtration process" />
+                                <div class="craft__step">02</div>
+                            </div>
+                            <div class="craft__content">
+                                <i class="ph ph-funnel"></i>
+                                <h3>Pure filtration</h3>
+                                <p>Advanced multi-stage filtration retaining natural minerals and electrolytes</p>
+                            </div>
+                        </article>
+                        <article class="craft__card" data-reveal>
+                            <div class="craft__image">
+                                <img src="assets/images/frames_cropped/ezgif-frame-145.jpg" alt="Quality testing" />
+                                <div class="craft__step">03</div>
+                            </div>
+                            <div class="craft__content">
+                                <i class="ph ph-flask"></i>
+                                <h3>Quality tested</h3>
+                                <p>Rigorously tested in our labs for purity, pH balance, and mineral composition</p>
+                            </div>
+                        </article>
+                        <article class="craft__card" data-reveal>
+                            <div class="craft__image">
+                                <img src="assets/images/frames_cropped/ezgif-frame-180.jpg" alt="Premium packaging" />
+                                <div class="craft__step">04</div>
+                            </div>
+                            <div class="craft__content">
+                                <i class="ph ph-gift"></i>
+                                <h3>Premium packaging</h3>
+                                <p>Elegantly bottled and sealed to preserve freshness from our facility to you</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ════════════════════════════════════
+                 FEATURES / PRODUCT
+                 ════════════════════════════════════ -->
             <section class="features section" id="product">
                 <div class="container">
                     <div class="section-heading" data-reveal>
-                        <span class="eyebrow">Product details</span>
-                        <h2>The Aquavista bottle is positioned as a dependable packaged water product for daily use and business supply.</h2>
+                        <span class="eyebrow"><i class="ph ph-cube"></i> Product</span>
+                        <h2>Designed for <span class="gold">Excellence</span></h2>
                     </div>
-
-                    <div class="feature-grid">
-                        <article class="feature-card" data-reveal>
-                            <span class="feature-card__number">01</span>
+                    <div class="features__grid">
+                        <article class="feature" data-reveal>
+                            <div class="feature__icon"><i class="ph ph-droplet"></i></div>
+                            <span class="feature__num">01</span>
                             <h3>Fresh taste</h3>
-                            <p>Prepared to deliver a clear, refreshing, and easy-to-choose drinking experience.</p>
+                            <p>Clear, crisp, and refreshing — the way water should taste.</p>
                         </article>
-
-                        <article class="feature-card" data-reveal>
-                            <span class="feature-card__number">02</span>
-                            <h3>Clear packaging</h3>
-                            <p>A transparent bottle and visible branding help the product stand out on shelf.</p>
+                        <article class="feature" data-reveal>
+                            <div class="feature__icon"><i class="ph ph-cube"></i></div>
+                            <span class="feature__num">02</span>
+                            <h3>Clear bottle</h3>
+                            <p>Transparent premium glass-like PET for visible purity.</p>
                         </article>
-
-                        <article class="feature-card feature-card--image" data-reveal>
-                            <img src="assets/images/frames/ezgif-frame-124.jpg" alt="Bottle feature detail" />
+                        <article class="feature feature--image" data-reveal>
+                            <img src="assets/images/frames_cropped/ezgif-frame-124.jpg" alt="Bottle detail" />
                         </article>
-
-                        <article class="feature-card feature-card--wide" data-reveal>
-                            <span class="feature-card__number">03</span>
-                            <h3>Retail-ready identity</h3>
-                            <p>The label, bottle shape, and overall visual style are developed to work well across retail stores, distribution channels, hotels, events, and institutional supply environments.</p>
+                        <article class="feature feature--wide" data-reveal>
+                            <div class="feature__icon"><i class="ph ph-storefront"></i></div>
+                            <span class="feature__num">03</span>
+                            <h3>Retail ready</h3>
+                            <p>Designed for premium shelf placement in retail, hospitality, and corporate environments.</p>
                         </article>
                     </div>
                 </div>
             </section>
 
+            <!-- ════════════════════════════════════
+                 NEW: SPECIFICATIONS
+                 ════════════════════════════════════ -->
+            <section class="specs section" id="specs">
+                <div class="container">
+                    <div class="section-heading" data-reveal>
+                        <span class="eyebrow"><i class="ph ph-ruler"></i> Specifications</span>
+                        <h2>Precision in <span class="gold">Every Detail</span></h2>
+                    </div>
+                    <div class="specs__grid">
+                        <div class="specs__visual" data-reveal>
+                            <img src="assets/images/frames_cropped/ezgif-frame-130.jpg" alt="Aquavista bottle specifications" />
+                        </div>
+                        <div class="specs__list" data-reveal>
+                            <div class="specs__item">
+                                <div class="specs__item-icon"><i class="ph ph-droplet-half"></i></div>
+                                <div>
+                                    <strong>Volume</strong>
+                                    <span>500 ml · 750 ml · 1 L</span>
+                                </div>
+                            </div>
+                            <div class="specs__item">
+                                <div class="specs__item-icon"><i class="ph ph-flask"></i></div>
+                                <div>
+                                    <strong>Mineral profile</strong>
+                                    <span>pH 7.2 · Calcium 12mg/L · Magnesium 3mg/L</span>
+                                </div>
+                            </div>
+                            <div class="specs__item">
+                                <div class="specs__item-icon"><i class="ph ph-bottle"></i></div>
+                                <div>
+                                    <strong>Material</strong>
+                                    <span>Premium PET · BPA-free · 100% recyclable</span>
+                                </div>
+                            </div>
+                            <div class="specs__item">
+                                <div class="specs__item-icon"><i class="ph ph-certificate"></i></div>
+                                <div>
+                                    <strong>Certifications</strong>
+                                    <span>ISO 22000 · FSSAI · FDA compliant</span>
+                                </div>
+                            </div>
+                            <div class="specs__item">
+                                <div class="specs__item-icon"><i class="ph ph-calendar"></i></div>
+                                <div>
+                                    <strong>Shelf life</strong>
+                                    <span>24 months from bottling date</span>
+                                </div>
+                            </div>
+                            <div class="specs__item">
+                                <div class="specs__item-icon"><i class="ph ph-sun"></i></div>
+                                <div>
+                                    <strong>Storage</strong>
+                                    <span>Store in cool, dry place away from direct sunlight</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ════════════════════════════════════
+                 GALLERY
+                 ════════════════════════════════════ -->
             <section class="gallery section" id="gallery">
                 <div class="container">
                     <div class="section-heading" data-reveal>
-                        <span class="eyebrow">Gallery</span>
-                        <h2>A closer look at the Aquavista bottle, label, and shelf-ready appearance.</h2>
+                        <span class="eyebrow"><i class="ph ph-image"></i> Gallery</span>
+                        <h2>The Bottle <span class="gold">in Frame</span></h2>
                     </div>
-
-                    <div class="gallery-grid">
-                        <figure class="gallery-card gallery-card--large" data-reveal>
-                            <img src="assets/images/frames/ezgif-frame-072.jpg" alt="Aquavista bottle frame" />
+                    <div class="gallery__grid">
+                        <figure class="gallery__card gallery__card--large" data-reveal>
+                            <img src="assets/images/frames_cropped/ezgif-frame-072.jpg" alt="Aquavista bottle front view" />
                         </figure>
-                        <figure class="gallery-card" data-reveal>
-                            <img src="assets/images/frames/ezgif-frame-096.jpg" alt="Aquavista close up frame" />
+                        <figure class="gallery__card" data-reveal>
+                            <img src="assets/images/frames_cropped/ezgif-frame-096.jpg" alt="Aquavista bottle close up" />
                         </figure>
-                        <figure class="gallery-card" data-reveal>
-                            <img src="assets/images/frames/ezgif-frame-168.jpg" alt="Aquavista bottle visual" />
+                        <figure class="gallery__card" data-reveal>
+                            <img src="assets/images/frames_cropped/ezgif-frame-050.jpg" alt="Aquavista bottle angle view" />
+                        </figure>
+                        <figure class="gallery__card gallery__card--wide" data-reveal>
+                            <img src="assets/images/frames_cropped/ezgif-frame-168.jpg" alt="Aquavista bottle premium view" />
                         </figure>
                     </div>
                 </div>
             </section>
 
+            <!-- ════════════════════════════════════
+                 CONTACT
+                 ════════════════════════════════════ -->
             <section class="contact section" id="contact">
                 <div class="container contact__grid">
                     <div class="contact__intro" data-reveal>
-                        <span class="eyebrow">Contact</span>
-                        <h2>Connect for supply and business enquiries.</h2>
-                        <p>Contact Aquavista for dealership interest, retail supply, hospitality orders, office requirements, events, and distribution opportunities.</p>
+                        <span class="eyebrow"><i class="ph ph-headset"></i> Connect</span>
+                        <h2>Let's Talk <span class="gold">Supply</span></h2>
+                        <p>Retail, hospitality, corporate, or events — reach out and let's discuss how Aquavista can serve your needs.</p>
+                        <div class="contact__details">
+                            <span><i class="ph ph-phone-call"></i> +1 (555) 123-4567</span>
+                            <span><i class="ph ph-envelope"></i> hello@aquavista.com</span>
+                            <span><i class="ph ph-map-pin"></i> 124 Spring Valley, NY</span>
+                        </div>
                     </div>
-
-                    <form class="contact-form" id="contactForm" data-reveal>
+                    <form class="contact__form" id="contactForm" data-reveal>
                         <div class="field">
                             <label for="name">Name</label>
                             <input id="name" name="name" type="text" placeholder="Your name" />
                         </div>
                         <div class="field">
                             <label for="email">Email</label>
-                            <input id="email" name="email" type="email" placeholder="name@email.com" />
+                            <input id="email" name="email" type="email" placeholder="name@domain.com" />
                         </div>
                         <div class="field field--full">
                             <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="4" placeholder="Tell us about your inquiry"></textarea>
+                            <textarea id="message" name="message" rows="4" placeholder="Tell us about your enquiry..."></textarea>
                         </div>
-                        <div class="contact-form__actions field--full">
-                            <button type="submit" class="button">Send request</button>
-                            <a class="button button--secondary" href="#top">Back to top</a>
+                        <div class="contact__actions field--full">
+                            <button type="submit" class="button"><i class="ph ph-paper-plane-right"></i> Send request</button>
+                            <a class="button button--ghost" href="#top"><i class="ph ph-arrow-up"></i> Back to top</a>
                         </div>
-                        <p class="contact-form__note" id="contactNote">A clean contact section for product enquiries.</p>
+                        <p class="contact__note" id="contactNote"></p>
                     </form>
                 </div>
             </section>
 
-            <footer class="site-footer">
-                <div class="container site-footer__inner">
-                    <div class="site-footer__brand">
-                        <img class="site-footer__logo" src="assets/images/transparent-aquavista.png" alt="Aquavista logo" />
+            <!-- ════════════════════════════════════
+                 FOOTER
+                 ════════════════════════════════════ -->
+            <footer class="footer">
+                <div class="container footer__inner">
+                    <div class="footer__brand">
+                        <img src="assets/images/transparent-aquavista.png" alt="Aquavista" />
                         <div>
                             <strong>Aquavista</strong>
-                            <p>A packaged drinking water brand created for dependable daily use and a strong presence across retail, business, and hospitality environments.</p>
+                            <p>Premium packaged drinking water — crafted by nature, perfected for you.</p>
                         </div>
                     </div>
-
-                    <div class="site-footer__links">
-                        <a href="#story">Company</a>
+                    <div class="footer__links">
+                        <a href="#story">Heritage</a>
+                        <a href="#craft">Craft</a>
                         <a href="#product">Product</a>
+                        <a href="#specs">Specs</a>
                         <a href="#gallery">Gallery</a>
                         <a href="#contact">Contact</a>
                     </div>
                 </div>
             </footer>
+
         </main>
     </div>
-
     <script src="js/main.js"></script>
 </body>
 </html>
